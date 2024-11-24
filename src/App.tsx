@@ -1,29 +1,28 @@
 import './css/App.css'
-import NavBar from "./components/NavBar";
 import Introduction from "./components/Introduction";
 import History from "./components/History";
 import Design from "./components/Design";
 import Preservation from "./components/Preservation";
-import OtherNorias from "./components/OtherNorias";
+import Norias from "./components/Norias";
 import Conclusion from "./components/Conclusion";
 import References from './components/References';
+import Title from './components/Title';
+import PhotoAlbum from './components/PhotoAlbum';
+
 
 function App() {
 
   return (
     <>
-    <NavBar />
-    <div className='Body'>
-      <h1>Ancient Waterworks of the Orontes</h1>
-      <p>The evolution of hydraulic technology featuring the Norias of Hama, Syria.</p>
+      <Title />
       <Introduction />
       <History />
       <Design />
       <Preservation />
-      <OtherNorias />
+      <Norias />
       <Conclusion />
+      <PhotoAlbum />
       <References />
-    </div>
     </>
   )
 }

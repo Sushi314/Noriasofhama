@@ -1,7 +1,7 @@
 
 const Preservation = () => {
     return (
-      <section id="preservation">
+      <section id="preservation" className="components">
         <h2>Preservation</h2>
         <ul>
         <li>

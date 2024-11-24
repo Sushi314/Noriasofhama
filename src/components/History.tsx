@@ -1,6 +1,6 @@
 const History = () => {
   return (
-    <section id="history">
+    <section id="history" className="components">
       <h2>History</h2>
       <ul>
         <li>

@@ -1,6 +1,18 @@
-body   {
+
+body {
+    background-color: #424b54;
+}
+
+.title {
     color: #EBCFB2;
     background-color: #424b54;
     padding: 2em;
-    align-items: center;
+    text-align: center;
+    font-size: x-large;
+    text-shadow: 2px 2px 10px rgb(199, 71, 7);
+}
+.components {
+    color: #EBCFB2;
+    background-color: #424b54;
+    padding: 5em;
 }

@@ -1,6 +1,7 @@
+import '../css/App.css'
 const Introduction = () => {
   return (
-    <section id="introduction">
+    <section id="introduction" className="components">
       <h2>Introduction</h2>
       <ul>
         <li>

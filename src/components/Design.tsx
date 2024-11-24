@@ -1,6 +1,6 @@
 const Design = () => {
     return (
-      <section id="design">
+      <section id="design" className="components">
       <h2>Design</h2>
       <ul>
         <li>

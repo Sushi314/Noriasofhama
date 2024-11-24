@@ -1,6 +1,6 @@
 const Conclusion = () => {
     return (
-      <section id="conclusion">
+      <section id="conclusion" className="components">
         <h2>Conclusion</h2>
       <ul>
         <li>The Norias of Hama are of historical, technological, and cultural significance.</li>
