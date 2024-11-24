@@ -1,0 +1,35 @@
+/* Styles for the horizontal navbar */
+.navbar {
+    background-color: #EBCFB2;
+    border-radius: 2em;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 2em;
+  }
+  
+  .navbar-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 10px;
+  }
+  
+  .navbar-link {
+    color: #424B54;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #8D775C;
+  }
+  
