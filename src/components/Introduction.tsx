@@ -36,7 +36,7 @@ const Introduction = () => {
               Objective: To explore the history and technology of the Norias in Syria, with a focus on Noria al-Muhammadiyya.
             </li>
             <li>
-              Thesis: Ancient Waterworks of the Orontes: The evolution of hydraulic technology featuring the Norias of Hama, Syria.
+            Thesis: Analysis of the Ancient Waterworks of the Orontes: The evolution of hydraulic technology in ancient Syria, and the Norias of Hama’s contributions to sustainable water management. 
             </li>
           </ul>
         </li>
