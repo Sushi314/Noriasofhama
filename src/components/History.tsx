@@ -2,6 +2,7 @@ const History = () => {
   return (
     <section id="history" className="components">
       <h2>History</h2>
+      <p>The earliest evidence of water lifting devices dates to the classical era, around 400BCE, believed to have originated in the Mediterranean with capturing the power of the Orontes River. also being used for grinding wheat and metal working (ASME, 2006). The earliest devices used a vertical shaft that restricted the power output, preventing them from being used for lifting water (ASME, 2006).  </p>
       <ul>
         <li>
           <strong>A. Construction of Noria al-Muhammadiyya</strong>

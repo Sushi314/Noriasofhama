@@ -106,11 +106,6 @@ import { useState } from "react";
     description: "This is the second image of The Four Norias.",
   },
   {
-    src: "/assets/images/Witpress Design and Nature/Group Side Construction.png",
-    alt: "Group Side Construction",
-    description: "This is a group image of side construction from Witpress Design and Nature.",
-  },
-  {
     src: "/assets/images/Witpress Design and Nature/Install Type Single.png",
     alt: "Install Type Single",
     description: "This is an image of a single installation type.",
@@ -123,7 +118,7 @@ import { useState } from "react";
   {
     src: "/assets/images/Witpress Design and Nature/Norias Side.png",
     alt: "Norias Side",
-    description: "This is an image of the Norias Side.",
+    description: "The main structure of a hydraulic noria is composed of two pairs of parallel beams perpendicular to each other. The secondary beams can be radial, perpendicular to the main beams or oblique. (Witpress Fix Citation)",
   },
 
   // Screenshots and Other Images
