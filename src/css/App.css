@@ -157,11 +157,14 @@ figcaption {
 .poem {
     font-style: italic;
     text-align: center;
+    color: #EBCFB2;
     margin: 1em auto;
     line-height: 1.6;
-    background-color: #59626A;
-    padding: 1em;
-    border-radius: 8px;
+    background-color: #535c63;
+    padding: 4em;
+    border-radius: 20px;
+    max-width: fit-content;
+
 }
 
 .poem-title {

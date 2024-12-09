@@ -45,28 +45,61 @@ const NorisTransform = () => {
 
         <div className="poem">
             <h3 className="poem-title">The Ode of the Water Wheel</h3>
-            <p>Today, I questioned a water wheel,</p>
-            <p>I asked, "Why do you turn upon this stream?"</p>
-            <p>"Why is your chest pierced, your eyes full of tears,</p>
-            <p>What causes you to lament with such reproach?"</p>
-            <p>"You have no rest, turning day and night,</p>
-            <p>Pouring blood-stained tears from sorrowful eyes."</p>
-            <p>"Your straight stature has bent like a bow,</p>
-            <p>Your groaning has become a melody for the rebab."</p>
-            <p>"In the morning, your tears flow endlessly,</p>
-            <p>You do not find a moment’s sleep at night."</p>
-            <p>"Why do you cry out in anguish and pain,</p>
-            <p>Is your sorrow beyond measure or account?"</p>
-            <p>"Your grieving chest has been pierced by groans,</p>
-            <p>Your sighs have turned hearts into burning embers."</p>
-            <p>"What news has fate delivered to you,</p>
-            <p>That your ledger of grief could not fit into books?"</p>
-            <p>"What cruelty has this tyrannical wheel inflicted on you,</p>
-            <p>That you’ve fallen into this endless reproach?"</p>
-            <p>"Your smoke has darkened the blue skies above,</p>
-            <p>And your sighs have turned the earth into dust below."</p>
-            <p>I asked about the water wheel’s endless turning,</p>
-            <p>And as it turned, the wheel gave me its reply.</p>
+            <p style={{ textAlign: "center" }}>
+            Today, I questioned a water wheel,
+            <br />
+            I asked, "Why do you turn upon this stream?"
+             <br />
+             <br />
+            "Why is your chest pierced, your eyes full of tears,
+            <br />
+            What causes you to lament with such reproach?"
+            <br />
+             <br />
+            "You have no rest, turning day and night,
+            <br />
+            Pouring blood-stained tears from sorrowful eyes."
+                <br />
+             <br />
+            "Your straight stature has bent like a bow,
+            <br />
+            Your groaning has become a melody for the rebab."
+            <br />
+             <br />
+            "In the morning, your tears flow endlessly,
+            <br />
+            You do not find a moment’s sleep at night."
+            <br />
+            <br />
+            "Why do you cry out in anguish and pain,
+            <br />
+            Is your sorrow beyond measure or account?"
+                <br />
+             <br />
+            "Your grieving chest has been pierced by groans,
+            <br />
+            Your sighs have turned hearts into burning embers."
+                <br />
+             <br />
+            "What news has fate delivered to you,
+            <br />
+            That your ledger of grief could not fit into books?"
+                <br />
+             <br />
+            "What cruelty has this tyrannical wheel inflicted on you,
+            <br />
+            That you’ve fallen into this endless reproach?"
+                <br />
+             <br />
+            "Your smoke has darkened the blue skies above,
+            <br />
+            And your sighs have turned the earth into dust below."
+                <br />
+             <br />
+            I asked about the water wheel’s endless turning,
+            <br />
+            And as it turned, the wheel gave me its reply.
+            </p>
         </div>
             <p>
             T&uuml;rkan also writes the following passage, highlighting the reputation the norias have established:
