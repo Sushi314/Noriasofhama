@@ -1,6 +1,7 @@
 const Norias = () => {
   return (
-    <section id="norias" className="components">
+    <div className="container">
+    <div id="norias" className="components">
       <h2>Norias of Hama</h2>
       <ul>
         <li>
@@ -73,7 +74,8 @@ const Norias = () => {
           a dam with larger norias and a mill. It was restored in 1984.
         </li>
       </ul>
-    </section>
+    </div>
+    </div>
   );
 };
 

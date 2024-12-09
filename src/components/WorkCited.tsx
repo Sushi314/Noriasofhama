@@ -79,7 +79,7 @@ const references = [
 
 const References: React.FC = () => {
   return (
-    <div id="references" className="components">
+    <div id="workcited" className="components">
       <h2>Works Cited</h2>
       <cite>
       <ul style={{ listStyleType: "none", padding: 0 }}>

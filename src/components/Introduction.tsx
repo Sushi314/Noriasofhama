@@ -1,50 +1,56 @@
-import '../css/App.css'
 const Introduction = () => {
   return (
-    <section id="introduction" className="components">
-      <h2>Introduction</h2>
-      <p>Norias are ancient water-lifting devices powered by flow of the river, the stand as a monument of early hydraulic engineering and technological development. Norias played a critical role in irrigation and urban water supply in the ancient Mediterranean and Middle Eastern regions. By examining the historical origins, technological advancements, and cultural significance of norias, we can better understand their pivotal role in shaping ancient societies and influencing subsequent mechanical innovations. 
-
-Hama, Syria is home to 14 of the largest medieval waterwheels that are still functioning today. The largest towering 21 meters (69 feet) over the Orontes river call named Noria al-Muhammadiyya. It supplied water to the al-A’la Mosque, bath house of Hammam al-Dahab also the gardens, houses, and fountains in the area (ASME, 2006).  </p>
-      <ul>
-        <li>
-          <strong>A. Overview of the Hydraulic Technological Development in Classical Syria</strong>
-          <ul>
-            <li>The significance of water management in Syria.</li>
-            <li>
-              Introduction to Norias
-              <ul>
-                <li>Noria: A device for raising water.</li>
-                <li>Literal translation: “the wailer”.</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>B. Introduction to The Norias of Syria</strong>
-          <ul>
-            <li>
-              Noria al-Muhammadiyya
-              <ul>
-                <li>The largest and most famous noria in Hama.</li>
-                <li>Supplied water to al-A'la Mosque.</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>C. Research Objective and Thesis Statement</strong>
-          <ul>
-            <li>
-              Objective: To explore the history and technology of the Norias in Syria, with a focus on Noria al-Muhammadiyya.
-            </li>
-            <li>
-            Thesis: Analysis of the Ancient Waterworks of the Orontes: The evolution of hydraulic technology in ancient Syria, and the Norias of Hama’s contributions to sustainable water management. 
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+    <div className="container">
+    <div id="introduction" className="components">
+      <h1>Introduction</h1>
+      <p>
+        Have you ever considered what it takes to get water to your cup? In ancient times, prisoners were tortured on
+        "treadwheels," screaming in agony as they pumped water (<em>de Miranda 112</em>). Yet, in medieval Syria, those
+        screams were replaced by the deep, ominous tones of{" "}
+        <a
+          href="https://youtu.be/2uHhPDFRum0?si=oDavAy4JSUhJ4tX5"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          "the wailer."
+        </a>{" "}
+        (loud sound warning).
+      </p>
+      <div className="poem">
+      <p style={{ textAlign: "center" }}>
+        “Ali, Ali you cry as you turn, O wheel.
+        <br />
+        Why do you groan, O wheel, where is your pain?
+        <br />
+        Were you separated from your beloved, or your homeland?
+        <br />
+        Why do you groan, O wheel, where is your pain?”
+        <br />
+        <br /> (<em>Öztelli qtd. In Alvan 476</em>)
+      </p>
+      </div>
+      <p>
+        The pain comes from the wood of the wailers, called noria or norias, as they spin on their axles, creaking from
+        the force of the river. These colossal water-lifting devices tower over the Orontes River, with the largest,
+        Noria al-Muhammadiyya, reaching an impressive height of 69 feet (<em>ASME 7</em>). These engineering marvels
+        were instrumental in transforming the declining settlement of Hama into “the city of water wheels,” one of the
+        oldest continuously occupied cities in the world (<em>Astour 51-54; Wilson 1-32</em>). At Hama’s city center
+        lies “the mound,” a prehistoric settlement dating back to 6000 BCE (<em>See Fig. 1.2</em>) (
+        <em>National Museum of Denmark (NMOD)</em>).
+      </p>
+      <p>
+        As the heartbeat of Hama’s historical transformation, the norias continue to resonate in the city’s cultural
+        identity. Even today, the drone of the norias echoes through the gardens of Hama. With fourteen of these
+        medieval goliaths still revolving, they no longer carry agony but joy as visitors ride them and leap into the
+        water below (<em>See Fig. 1.3</em>).
+      </p>
+      <p>
+        The norias of Hama were once an innovative solution for lifting water to drive agriculture. Now, these creaking
+        behemoths have evolved into engineering masterpieces and cultural icons, shaping modern culture through
+        tourism, recreation, and even appearances in video games.
+      </p>
+    </div>
+    </div>
   );
 };
 

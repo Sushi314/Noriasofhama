@@ -9,16 +9,10 @@ const NavBar = () => {
           <a href="#introduction" className="navbar-link">Introduction</a>
         </li>
         <li className="navbar-item">
-          <a href="#history" className="navbar-link">History</a>
+          <a href="#thenoria" className="navbar-link">The Noria</a>
         </li>
         <li className="navbar-item">
-          <a href="#design" className="navbar-link">Design</a>
-        </li>
-        <li className="navbar-item">
-          <a href="#preservation" className="navbar-link">Preservation</a>
-        </li>
-        <li className="navbar-item">
-          <a href="#norias" className="navbar-link">Norias</a>
+          <a href="#noriastransform" className="navbar-link">Noria's Transfrom</a>
         </li>
         <li className="navbar-item">
           <a href="#conclusion" className="navbar-link">Conclusion</a>
@@ -27,7 +21,7 @@ const NavBar = () => {
           <a href="#photo-album" className="navbar-link">Photo Album</a>
         </li>
         <li className="navbar-item">
-          <a href="#references" className="navbar-link">References</a>
+          <a href="#workcited" className="navbar-link">WorkCited</a>
         </li>
       </ul>
     </nav>

@@ -184,6 +184,7 @@ import { useState } from "react";
     };
   
     return (
+      <div className="container">
       <section id="photo-album" className="photo-album">
         <h2>Photo Album</h2>
         <div className="photo-grid">
@@ -223,6 +224,7 @@ import { useState } from "react";
           </div>
         )}
       </section>
+      </div>
     );
   };
   

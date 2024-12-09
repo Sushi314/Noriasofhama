@@ -1,11 +1,17 @@
 
 const Title = () => {
     return (
-      <section id="title" className="title">
-        <h1>Analysis of the Ancient Waterworks of the Orontes</h1>
-        <p>The evolution of hydraulic technology in ancient Syria, and the Norias of Hama's contributions to sustainable water management.
+      <section>
+      <div className="container">
+      <div id="title" className="title">
+        <h1>NORIAS OF HAMA</h1>
+        <p>The norias of Hama were once an innovative solution for lifting water to drive agriculture. Now, these creaking behemoths have evolved into engineering masterpieces and cultural icons, shaping modern culture through tourism, recreation, and even appearances in video games. 
         </p>
-        <p
+
+      </div>
+
+      </div>
+      <p
           style={{
             backgroundImage: `url("/assets/images/Pano Archnet.jpg")`,
             backgroundSize: "cover",
@@ -14,7 +20,7 @@ const Title = () => {
             width: "100%",
             height: "400px",
             borderRadius: ".15em",
-            maskImage: "radial-gradient(circle, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
+            maskImage: "radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 115%)",
 
 
           }}>
