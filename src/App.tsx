@@ -7,7 +7,7 @@ import Conclusion from "./components/Conclusion";
 import References from './components/WorkCited';
 import Title from './components/Title';
 import PhotoAlbum from './components/PhotoAlbum';
-import NorisTransform from './components/NorisTransfrom';
+import NoriasTransform from './components/NoriasTransfrom';
 
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
       <Title />
       <Introduction />
       <TheNoria />
-      <NorisTransform />
-      {/*<Norias />*/}
+      <NoriasTransform />
+      <Norias />
       <Conclusion />
       <PhotoAlbum />
       <References />
