@@ -4,10 +4,10 @@ import TheNoria from "./components/The Noria";
 
 import Norias from "./components/Norias";
 import Conclusion from "./components/Conclusion";
-import References from './components/WorkCited';
 import Title from './components/Title';
 import PhotoAlbum from './components/PhotoAlbum';
 import NoriasTransform from './components/NoriasTransfrom';
+import WorkCited from './components/WorkCited';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       <Norias />
       <Conclusion />
       <PhotoAlbum />
-      <References />
+      <WorkCited />
     </>
   )
 }

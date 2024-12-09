@@ -1,33 +1,38 @@
-/* General Body Styling */
 body {
     background-color: #424b54;
     font-family: Arial, sans-serif;
-    margin: 2em;
+    margin: 0;
     padding: 0;
     color: #EBCFB2;
-    display: flex; /* Enables flexbox for centering */
-    justify-content: center; /* Horizontally centers the content */
+    display: flex;
+    justify-content: center;
 }
 
 .container {
-    max-width: 1300px; /* Sets the maximum width */
-    width: 100%; /* Ensures responsiveness */
-    margin: 0 auto; /* Centers the container */
-    padding: 1em; /* Optional: Adds padding for spacing */
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 
-/* Title Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5em;
+    }
+}
+
+
 .title {
     color: #EBCFB2;
     background-color: #424b54;
-    padding: 1em;
+    padding: 0;
     text-align: center;
     font-size: xx-large;
     text-shadow: 2px 2px 10px rgb(199, 71, 7);
 }
 
-/* Section Components */
 .components {
     color: #EBCFB2;
     background-color: #424b54;
@@ -35,7 +40,6 @@ body {
     line-height: 1.6;
 }
 
-/* Heading Styling */
 h1, h2, h3 {
     text-align: center;
     color: #EBCFB2;
@@ -54,14 +58,14 @@ h3 {
     text-transform: capitalize;
 }
 
-/* Paragraph Styling */
+
 p {
     margin: 1em auto;
     padding: 0;
     line-height: 1.8;
 }
 
-/* Anchor Links */
+
 a {
     color: #EBCFB2;
     text-decoration: underline;
@@ -72,13 +76,13 @@ a:hover {
     color: #8D775C;
 }
 
-/* Emphasis Styling */
+
 em {
     font-style: italic;
     color: #FFD7A1;
 }
 
-/* Optional: List Styling */
+
 ul, ol {
     margin: 1em auto;
     padding-left: 2em;
@@ -89,7 +93,6 @@ li {
     margin-bottom: 0.5em;
 }
 
-/* Image Styling */
 img {
     display: block;
     margin: 1em auto;
@@ -97,7 +100,7 @@ img {
     height: auto;
 }
 
-/* Figures and Captions */
+
 figure {
     margin: 2em auto;
     text-align: center;
@@ -109,33 +112,17 @@ figcaption {
     margin-top: 0.5em;
 }
 
-/* Additional Class for Highlighted Sections */
+
 .highlight {
-    margin-left: 4em; /* Adjust this value for the desired indentation */
-    padding-left: 1em; /* Optional: Add internal padding for better readability */
-    border-left: 4px solid #EBCFB2; /* Optional: Visual enhancement */
-    background-color: #59626A; /* Match existing styles */
+    margin-left: 4em;
+    padding: 1.25em 3em 1.25em 3em;
+    border-left: 4px solid #EBCFB2;
+    background-color: #59626A;
     font-style: italic;
-    color: #FFD7A1; /* Ensure text contrast with the background */
+    box-sizing: border-box;
+    color: #FFD7A1;
 }
 
-
-.subtitle {
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    margin: 1em 0;
-    text-transform: uppercase;
-}
-
-.subheading {
-    font-size: medium;
-    font-weight: bold;
-    margin: 0.75em 0;
-    text-transform: capitalize;
-}
-
-/* Subtitles */
 .subtitle {
     font-size: 1.5em;
     font-weight: bold;
@@ -144,7 +131,7 @@ figcaption {
     text-transform: uppercase;
 }
 
-/* Subheadings */
+
 .subheading {
     font-size: 1.25em;
     font-weight: bold;
@@ -153,7 +140,10 @@ figcaption {
     text-align: center;
 }
 
-/* Poems */
+.poem-container {
+    text-align: center;
+}
+
 .poem {
     font-style: italic;
     text-align: center;
@@ -161,10 +151,17 @@ figcaption {
     margin: 1em auto;
     line-height: 1.6;
     background-color: #535c63;
-    padding: 4em;
+    padding: 1.5em;
     border-radius: 20px;
-    max-width: fit-content;
-
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .poem {
+        padding: 1em;
+        font-size: 0.9em;
+    }
 }
 
 .poem-title {
@@ -174,7 +171,7 @@ figcaption {
     text-decoration: underline;
 }
 
-/* Styling for Conclusion Section */
+
 .conclusion {
     color: #FFD7A1;
     background-color: #424b54;
@@ -185,3 +182,52 @@ figcaption {
     font-size: 1.1em;
     line-height: 1.8;
 }
+
+.works-cited-container {
+    max-width: 1000px; /* Restrict maximum width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.works-cited {
+    background-color: #424b54; /* Match the existing theme */
+    color: #EBCFB2;
+    padding: 2em;
+    border-radius: 10px;
+    line-height: 1.8;
+    margin: 2em auto;
+    max-width: 800px; /* Ensure content fits well within the container */
+    box-sizing: border-box;
+    word-break:break-all;
+}
+
+.works-cited p {
+    margin-bottom: 1.5em; /* Spacing between paragraphs */
+    font-size: 1em; /* Maintain readable text size */
+    text-align: justify;
+    text-indent: -60px; /* Negative indent for hanging lines */
+    padding-left: 60px; /* Offset to align the text */
+}
+
+.works-cited a {
+    color: #FFD7A1; /* Highlighted links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.works-cited a:hover {
+    color: #8D775C; /* Subtle hover effect */
+}
+
+.works-cited em {
+    font-style: italic;
+    color: #FFD7A1;
+}
+
+.works-cited .title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    color: #FFD7A1;
+}
+
