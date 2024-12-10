@@ -1,3 +1,4 @@
+/* Photo Album Styles */
 .photo-album {
   padding: 20px;
   text-align: center;
@@ -32,6 +33,7 @@
   color: #EBCFB2;
 }
 
+/* Lightbox Styles */
 .lightbox {
   position: fixed;
   top: 0;
@@ -54,7 +56,7 @@
 
 .lightbox-image {
   max-width: 90%;
-  max-height: calc(80vh - 50px); 
+  max-height: calc(80vh - 50px);
 }
 
 .lightbox-description {
@@ -99,7 +101,7 @@
   color: #8D775C;
 }
 
-
+/* Image Card Styles (if needed elsewhere) */
 .image-card {
   margin: 20px auto;
   max-width: 600px;
@@ -112,6 +114,12 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-card-photo:hover {
+  transform: scale(1.05);
 }
 
 .image-card-caption {

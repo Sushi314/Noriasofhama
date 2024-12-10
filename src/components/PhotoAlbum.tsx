@@ -1,205 +1,45 @@
-
 import "../css/PhotoAlbum.css";
 import { useState } from "react";
+import imagesData from "../data/ImagesData"; // Adjust the path if necessary
 
+const PhotoAlbum = () => {
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
 
-  const PhotoAlbum = () => {
-    const photos = [
-        // Discover Islamic Art
-  {
-    src: "/assets/images/Discover Islamic Art/1 DIA.png",
-    alt: "Discover Islamic Art 1",
-    description: "This is the first image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/2 DIA.png",
-    alt: "Discover Islamic Art 2",
-    description: "This is the second image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/3 DIA.png",
-    alt: "Discover Islamic Art 3",
-    description: "This is the third image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/4 DIA.png",
-    alt: "Discover Islamic Art 4",
-    description: "This is the fourth image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/5 DIA.png",
-    alt: "Discover Islamic Art 5",
-    description: "This is the fifth image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/6 DIA.png",
-    alt: "Discover Islamic Art 6",
-    description: "This is the sixth image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/7 DIA.png",
-    alt: "Discover Islamic Art 7",
-    description: "This is the seventh image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/8 DIA.png",
-    alt: "Discover Islamic Art 8",
-    description: "This is the eighth image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/9 DIA.png",
-    alt: "Discover Islamic Art 9",
-    description: "This is the ninth image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/10 DIA.png",
-    alt: "Discover Islamic Art 10",
-    description: "This is the tenth image from Discover Islamic Art.",
-  },
-  {
-    src: "/assets/images/Discover Islamic Art/11 DIA.png",
-    alt: "Discover Islamic Art 11",
-    description: "This is the eleventh image from Discover Islamic Art.",
-  },
+  const openLightbox = (index: number) => {
+    setCurrentImage(index);
+    setIsLightboxOpen(true);
+  };
 
-  // Islamic Art in the Mediterranean
-  {
-    src: "/assets/images/Islamic Art in the Mediterranean/1 al-Muhammadiyya .png",
-    alt: "Islamic Art in the Mediterranean 1",
-    description: "This is the first image from Islamic Art in the Mediterranean.",
-  },
-  {
-    src: "/assets/images/Islamic Art in the Mediterranean/2 al-Muhammadiyya .png",
-    alt: "Islamic Art in the Mediterranean 2",
-    description: "This is the second image from Islamic Art in the Mediterranean.",
-  },
-  {
-    src: "/assets/images/Islamic Art in the Mediterranean/3 al-Muhammadiyya .png",
-    alt: "Islamic Art in the Mediterranean 3",
-    description: "This is the third image from Islamic Art in the Mediterranean.",
-  },
+  const closeLightbox = () => {
+    setIsLightboxOpen(false);
+  };
 
-  // Witpress Design and Nature
-  {
-    src: "/assets/images/Witpress Design and Nature/1 Side Construction.png",
-    alt: "Witpress Design and Nature - Side Construction 1",
-    description: "This is the first image of side construction from Witpress Design and Nature.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/2 Side Construction.png",
-    alt: "Witpress Design and Nature - Side Construction 2",
-    description: "This is the second image of side construction from Witpress Design and Nature.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/3 Side Construction.png",
-    alt: "Witpress Design and Nature - Side Construction 3",
-    description: "This is the third image of side construction from Witpress Design and Nature.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/1 The Four Norias .png",
-    alt: "The Four Norias 1",
-    description: "This is the first image of The Four Norias.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/2 The Four Norias.png",
-    alt: "The Four Norias 2",
-    description: "This is the second image of The Four Norias.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/Install Type Single.png",
-    alt: "Install Type Single",
-    description: "This is an image of a single installation type.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/Al-Bisiriyya Al-Kubra.png",
-    alt: "Al-Bisiriyya Al-Kubra",
-    description: "This is an image of Al-Bisiriyya Al-Kubra.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/Norias Side.png",
-    alt: "Norias Side",
-    description: "The main structure of a hydraulic noria is composed of two pairs of parallel beams perpendicular to each other. The secondary beams can be radial, perpendicular to the main beams or oblique. (Witpress Fix Citation)",
-  },
+  const nextImage = () => {
+    setCurrentImage((currentImage + 1) % imagesData.length);
+  };
 
-  // Screenshots and Other Images
-  {
-    src: "/assets/images/Witpress Design and Nature/Screenshot 2024-11-24 135159.png",
-    alt: "Screenshot 135159",
-    description: "This is a screenshot taken on 2024-11-24 at 13:51:59.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/Screenshot 2024-11-24 135222.png",
-    alt: "Screenshot 135222",
-    description: "This is a screenshot taken on 2024-11-24 at 13:52:22.",
-  },
-  {
-    src: "/assets/images/Witpress Design and Nature/Screenshot 2024-11-24 135245.png",
-    alt: "Screenshot 135245",
-    description: "This is a screenshot taken on 2024-11-24 at 13:52:45.",
-  },
+  const prevImage = () => {
+    setCurrentImage((currentImage - 1 + imagesData.length) % imagesData.length);
+  };
 
-  // Other Images
-  {
-    src: "/assets/images/1.png",
-    alt: "Other Image 1",
-    description: "This is the first other image.",
-  },
-  {
-    src: "/assets/images/2.png",
-    alt: "Other Image 2",
-    description: "This is the second other image.",
-  },
-  {
-    src: "/assets/images/3.png",
-    alt: "Other Image 3",
-    description: "This is the third other image.",
-  },
-  {
-    src: "/assets/images/4.webp",
-    alt: "Other Image 4",
-    description: "This is the fourth other image.",
-  },
-    ];
-  
-    const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-    const [currentImage, setCurrentImage] = useState(0);
-  
-    const openLightbox = (index: number) => {
-      setCurrentImage(index);
-      setIsLightboxOpen(true);
-    };
-  
-    const closeLightbox = () => {
-      setIsLightboxOpen(false);
-    };
-  
-    const nextImage = () => {
-      setCurrentImage((currentImage + 1) % photos.length);
-    };
-  
-    const prevImage = () => {
-      setCurrentImage(
-        (currentImage - 1 + photos.length) % photos.length
-      );
-    };
-  
-    return (
-      <div className="container">
+  return (
+    <div className="container">
       <section id="photo-album" className="photo-album">
         <h2>Photo Album</h2>
         <div className="photo-grid">
-          {photos.map((photo, index) => (
+          {imagesData.map((image, index) => (
             <div
               key={index}
               className="photo-item"
               onClick={() => openLightbox(index)}
             >
-              <img src={photo.src} alt={photo.alt} className="photo" />
-              <p className="photo-description">{photo.description}</p>
+              <img src={image.src} alt={image.alt} className="photo" />
+              <p className="photo-description">{image.caption}</p>
             </div>
           ))}
         </div>
-  
+
         {isLightboxOpen && (
           <div className="lightbox">
             <button className="close-button" onClick={closeLightbox}>
@@ -210,13 +50,11 @@ import { useState } from "react";
             </button>
             <div className="lightbox-content">
               <img
-                src={photos[currentImage].src}
-                alt={photos[currentImage].alt}
+                src={imagesData[currentImage].src}
+                alt={imagesData[currentImage].alt}
                 className="lightbox-image"
               />
-              <p className="lightbox-description">
-                {photos[currentImage].description}
-              </p>
+              <p className="lightbox-description">{imagesData[currentImage].caption}</p>
             </div>
             <button className="next-button" onClick={nextImage}>
               &#10095;
@@ -224,9 +62,8 @@ import { useState } from "react";
           </div>
         )}
       </section>
-      </div>
-    );
-  };
-  
-  export default PhotoAlbum;
-  
+    </div>
+  );
+};
+
+export default PhotoAlbum;

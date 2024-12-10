@@ -1,3 +1,5 @@
+import ImageCard from "./ImageCard";
+
 const Introduction = () => {
   return (
     <div className="container">
@@ -38,6 +40,8 @@ const Introduction = () => {
       The norias of Hama were once an innovative solution for lifting water to drive agriculture. Now, these creaking behemoths have evolved into engineering masterpieces and cultural icons, shaping modern culture through tourism, recreation, and even appearances in video games.
       </p>
     </div>
+    <ImageCard figure="1.2"/>
+    <ImageCard figure="1.3"/>
     </div>
   );
 };
