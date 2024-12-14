@@ -1,4 +1,5 @@
 import imagesData from "../data/ImagesData.tsx"
+import "../css/ImageCard.css"
 import { useState } from "react";
 
 interface ImageCardProps {

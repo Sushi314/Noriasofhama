@@ -3,8 +3,7 @@ import ImageCard from "./ImageCard";
 const Introduction = () => {
   return (
     <div className="container">
-    <div id="introduction" className="components">
-      <h1>Introduction</h1>
+    <div id="introduction">
       <p>
       Have you ever considered what it takes to get water to your cup? In ancient times, prisoners were tortured on "treadwheels," screaming in agony as they pumped water (<em>de Miranda 112</em>). Yet, in medieval Syria, those screams were replaced by the deep, ominous tones of {" "}
         <a
@@ -40,8 +39,11 @@ const Introduction = () => {
       The norias of Hama were once an innovative solution for lifting water to drive agriculture. Now, these creaking behemoths have evolved into engineering masterpieces and cultural icons, shaping modern culture through tourism, recreation, and even appearances in video games.
       </p>
     </div>
-    <ImageCard figure="1.2"/>
-    <ImageCard figure="1.3"/>
+    <div className="image-card-grid">
+      <ImageCard figure="1.2"/>
+      <ImageCard figure="1.3"/>
+    </div>
+
     </div>
   );
 };

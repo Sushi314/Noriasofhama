@@ -1,6 +1,6 @@
 import "../css/PhotoAlbum.css";
 import { useState } from "react";
-import imagesData from "../data/ImagesData"; // Adjust the path if necessary
+import imagesData from "../data/ImagesData";
 
 const PhotoAlbum = () => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);

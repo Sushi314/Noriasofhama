@@ -27,11 +27,13 @@ const TheNoria = () => {
         the paddles are enclosed wooden boxes, called sanadiq, with an opening on the outer side to allow water in from
         the river and dump it into the aqueduct (<em>see Figs. 2.4 and 2.5</em>) (<em>Hafian; de Miranda 107-111</em>).
       </p>
+      <div className="image-card-grid">
       <ImageCard figure="2.2"/>
       <ImageCard figure="2.3"/>
       <ImageCard figure="2.4"/>
       <ImageCard figure="2.5"/>
       <ImageCard figure="2.6"/>
+      </div>
       <h2 className="subtitle">Purpose</h2>
       <p>
         “Norias are water wheels, but not all water wheels are norias” (<em>ASME 4</em>). Norias are a type of water
@@ -58,9 +60,12 @@ const TheNoria = () => {
         Stevenson makes a convincing argument that norias were used for the Hanging Gardens of Babylon. If true, this
         would date norias to the Neo-Babylonian era, around 600 BCE (<em>Stevenson 35-55</em>).
       </p>
-      <ImageCard figure="2.7"/>
-      <ImageCard figure="2.8"/>
-      <ImageCard figure="2.9"/>
+      <div className="image-card-grid">
+        <ImageCard figure="2.7"/>
+        <ImageCard figure="2.8"/>
+        <ImageCard figure="2.9"/>
+      </div>
+
     </div>
     </div>
   );

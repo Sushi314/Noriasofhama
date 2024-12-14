@@ -1,12 +1,12 @@
 
-import "../css/NavBar.css"; // Import styles for the NavBar
+import "../css/NavBar.css"; 
 
 const NavBar = () => {
   return (
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item">
-          <a href="#introduction" className="navbar-link">Introduction</a>
+          <a href="#" className="navbar-link">Home</a>
         </li>
         <li className="navbar-item">
           <a href="#thenoria" className="navbar-link">The Noria</a>

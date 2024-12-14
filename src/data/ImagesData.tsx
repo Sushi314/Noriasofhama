@@ -64,7 +64,7 @@ const imagesData = [
       caption: "A view of the Mamuriya water wheel in the Bain al-Hairain quarter. In the distance can be seen the aqueduct of the Jisriya water wheel.",
     },
     {
-      src: "/assets/images/New Images/2 Close BW al-Cheria NMOD.jpg",
+      src: "/assets/images/New Images/2 Close BW al-Cheria NMOD.png",
       alt: "2 Close BW al-Cheria NMOD",
       figure: "2.6",
       credit: "NMOD. The water wheel al-Muhammadiya.",
@@ -192,16 +192,16 @@ const imagesData = [
     {
       src: "/assets/images/New Images/BW al-Mamuriya NMOD.jpg",
       alt: "BW al-Mamuriya NMOD",
-      figure: "",
-      credit: "",
-      caption: "",
+      figure: "4.2",
+      credit: "NMOD. The water wheel al-Mamuriya.",
+      caption: "The image depicts five people on an island in the river, with Noria al-Mamuriya in the background.",
     },
     {
       src: "/assets/images/New Images/BW al-Muhammadiya NMOD.jpg",
       alt: "BW al-Muhammadiya NMOD",
-      figure: "4.2",
-      credit: "NMOD. The water wheel al-Mamuriya.",
-      caption: "The image depicts five people on an island in the river, with Noria al-Mamuriya in the background.",
+      figure: "",
+      credit: "",
+      caption: "",
     },
     {
       src: "/assets/images/New Images/Dick view of water wheel on the Orontes River.jpg",
